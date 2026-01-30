@@ -2,14 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import HorizontalCardPublication from "../components/HorizontalCardPublication.astro";
-import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
-import { Code } from "astro:components";
-import { Image } from "astro:assets";
-
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -32,9 +24,6 @@ const last_posts = posts.slice(0, 3);
           <a class="link" target="_blank" href="https://compimaging.dgp.toronto.edu/">Toronto Computational Imaging Group</a>
           (under <a class="link" target="_blank" href="https://dgp.toronto.edu/">Dynamic Graphics Project</a>). My current work is broadly in the realm of <b>differentiable radiative transfer for astronomical imaging</b>.
         </p>
-        <p class="py-2 text-lg">
-          On this site, you can also find my blog, <span class="tooltip" data-tip="Tom Scott defines the 'onosecond' as: The second after you make a terrible mistake. The Onominute (or 60 onoseconds) is a collection of my documentation and notes for learning various scientific topics. The name itself refers to the average number of times I realized my mistakes while learning a new topic, in a single sitting."><em>The Onominute</em></span>, where I write about various things that I'm learning.
-        </p>
       </text>
     </div>
 
@@ -54,25 +43,6 @@ const last_posts = posts.slice(0, 3);
   <div class="mt-4">
     <div tabindex="0" class="collapse my-2 collapse-arrow rounded-lg border border-current">
       <input type="checkbox" />
-      <div class="collapse-title text-lg font-bold">Academic interests</div>
-      <div class="collapse-content">
-        <p>I am an aspiring computational scientist with a research interest that lies in the intersection of computer science, astronomy, and (astro)physics. Within the field of computer science, my primary interests are within <b>visual computing</b> (computational imaging, computer vision, computer graphics, visualization) as well as <b>data-intensive science</b> (numerical methods, simulation, data processing, deep learning). I'm also passionate about teaching and inspiring new generation of scientists and engineers by cultivating their love for science and technology.</p>
-      </div>
-    </div>
-
-    <div tabindex="0" class="collapse my-2 collapse-arrow rounded-lg border border-current">
-      <input type="checkbox" />
-      <div class="collapse-title text-lg font-bold">Other interests</div>
-      <div class="collapse-content">
-        <div class="mt-4 leading-normal text-md ">Outside of research, I enjoy reading and learning about sciences, philosophy, and visual arts. I'm a hobbyist photographer, with a particular interest in still life, pets, and street photography.</div>
-        <div class="mt-4 leading-normal text-md ">I have two cats, <span class="tooltip" data-tip="Cam (as in camera 📸, but is also 🇻🇳 for orange 🍊) and Chanh (🇻🇳 for lemon 🍋). It's a quirky double word play which was absolutely not intentional.">Cam and Chanh</span>, and you can find them <a class="btn btn-outline px-1 min-h-0 h-6 p-0" target="_blank" href="https://www.instagram.com/cameowra.roll/">here</a>.</div>
-        <Image class="mt-4 mask rounded-3xl" format="webp" width={650} height={350} src={`${import.meta.env.BASE_URL}camchanh.jpg`} alt="Cam (right) & Chanh (left)" />
-        <div class="mt-4 leading-normal text-md ">I love scuba diving (fun fact: I got to see a whaleshark on my second ever dive), my next goal is to learn how to freedive! </div>
-      </div>
-    </div>
-
-    <div tabindex="0" class="collapse my-2 collapse-arrow rounded-lg border border-current">
-      <input type="checkbox" />
       <div class="collapse-title text-lg font-bold">Contact</div>
       <div class="collapse-content">
         <p class="py-2">
@@ -86,7 +56,6 @@ const last_posts = posts.slice(0, 3);
     </div>
     <div class="mt-2">
         <a class="btn btn-outline" href="https://twitter.com/len_luong09" target="_blank"> Let's connect!</a>
-        <a class="btn btn-outline" href={`${import.meta.env.BASE_URL}blog`}> My Blog</a>
         <a class="btn btn-outline" href={`${import.meta.env.BASE_URL}projects`}> My Projects</a>
         <a class="btn btn-outline" href="mailto:len@cs.toronto.edu" target="_blank"> Email me</a>
       </div>
@@ -171,28 +140,6 @@ const last_posts = posts.slice(0, 3);
     abstract="Light–matter interaction between quantum emitters and optical cavities plays a vital role in fundamental quantum photonics and the development of optoelectronics. Resonant metasurfaces are proven to be an efficient platform for tailoring the spontaneous emission (SE) of the emitters. In this work, we study the interplay between quasi-2D perovskites and dielectric TiO2 metasurfaces. The metasurface, functioning as an open cavity, enhances electric fields near its plane, thereby influencing the emissions of the perovskite. This is verified through angle-resolved photoluminescence (PL) studies. We also conducted reflectivity measurements and numerical simulations to validate the coupling between the quasi-2D perovskites and photonic modes. Notably, our work introduces a spatial mapping approach to study Purcell enhancement. Using fluorescence lifetime imaging microscopy (FLIM), we directly link the PL and lifetimes of the quasi-2D perovskites in spatial distribution when positioned on the metasurface. This correlation provides unprecedented insights into emitter distribution and emitter–resonator interactions. The methodology opens a new (to the best of our knowledge) approach for studies in quantum optics, optoelectronics, and medical imaging by enabling spatial mapping of both PL intensity and lifetime, differentiating between uncoupled quantum emitters and those coupled with different types of resonators."
     url="https://opg.optica.org/ol/abstract.cfm?uri=ol-49-9-2465"
   />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-2"><a  href="/blog/">The Onominute</a></div>
-  </div>
-  <text class="text-lg">
-    This is <a  href="/blog/"><b>The Onominute</b></a>, a collection of my documentation and notes for learning various scientific topics. The name itself refers to the average number of times I realized my mistakes while learning a new topic, in a single sitting.
-  </text>
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={`${import.meta.env.BASE_URL}blog/` + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10"><a href="/projects">Teaching</a></div>
