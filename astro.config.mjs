@@ -5,9 +5,13 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://lennmo09.github.io',
+  site: 'https://cuongchile.github.io',
   // base: '/my-repo',
-  integrations: [mdx(), sitemap(), tailwind()],
+  integrations: [
+    mdx(), 
+    sitemap(), 
+    tailwind()
+  ],
   markdown: {
     remarkPlugins: [
         'remark-math',
