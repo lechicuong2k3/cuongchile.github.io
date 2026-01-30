@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCardPublication from "../components/HorizontalCardPublication.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
 const baseUrl = import.meta.env.BASE_URL;
 ---
 
@@ -79,5 +80,51 @@ const baseUrl = import.meta.env.BASE_URL;
     img=""
     abstract=""
     url="#"
+  />
+
+  <div class="mt-10">
+    <div class="text-3xl w-full font-bold mb-5">Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Clinical Rotation website"
+    img=""
+    desc="Developed a website that can effectively produce the most appropriate clinical rotation including schedules for medical students, nursing students, and residents, by using data from the academic training programs from CHS (College of Health Sciences) at Vin University"
+    url="#"
+    badge="Front-end Developer/Back-end Developer"
+    target="_self"
+  />
+
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="UNIFIX start-up"
+    img=""
+    desc="Took on the position of CTO for an edu-tech startup called UNIFIX, which has successfully raised $2000 in funding. Co-ordinated development decisions with clients and managed team with Agile methodology."
+    url="#"
+    badge="Front-end Developer/Scrum Master/Product Manager"
+    target="_self"
+  />
+
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Food Menu Translator AI-integrated website"
+    img=""
+    desc="Used React.js to develop front-end interface for a web app that help enhancing tourists' food experience. Main functions: Explore nearby restaurants' location, menu, and reputation; Save favorite restaurants for future use; Find restaurants based on food name, Extract food list from menu image"
+    url="#"
+    badge="Front-end Developer"
+    target="_self"
+  />
+
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Brick Breaker Java App"
+    img=""
+    desc="Built a desktop app in Java in which the player must smash a wall of bricks by deflecting a bouncing ball with a paddle, whenever the ball touches a brick, it will disappear, and the player wins when breaking all the bricks or loses when failing to catch the ball with the paddle. Created and used many types of Data Structure and classes that are organized by Object Oriented Programming style."
+    url="#"
+    badge="Java Developer"
+    target="_self"
   />
 </BaseLayout>
