@@ -41,7 +41,7 @@ const last_posts = posts.slice(0, 3);
     <!-- RIGHT: headshot -->
     <div class="md:ml-6 md:w-56 lg:w-64 shrink-0 self-stretch rounded-2xl overflow-hidden aspect-[3/4]">
     <img
-        src="/headshot_dcs_portrait_small.jpg"
+        src={`${import.meta.env.BASE_URL}headshot_dcs_portrait_small.jpg`}
         alt="Portrait of Len"
         class="w-full h-full object-cover"
         loading="eager"
@@ -66,7 +66,7 @@ const last_posts = posts.slice(0, 3);
       <div class="collapse-content">
         <div class="mt-4 leading-normal text-md ">Outside of research, I enjoy reading and learning about sciences, philosophy, and visual arts. I'm a hobbyist photographer, with a particular interest in still life, pets, and street photography.</div>
         <div class="mt-4 leading-normal text-md ">I have two cats, <span class="tooltip" data-tip="Cam (as in camera 📸, but is also 🇻🇳 for orange 🍊) and Chanh (🇻🇳 for lemon 🍋). It's a quirky double word play which was absolutely not intentional.">Cam and Chanh</span>, and you can find them <a class="btn btn-outline px-1 min-h-0 h-6 p-0" target="_blank" href="https://www.instagram.com/cameowra.roll/">here</a>.</div>
-        <Image class="mt-4 mask rounded-3xl" format="webp" width={650} height={350} src="/camchanh.jpg" alt="Cam (right) & Chanh (left)" />
+        <Image class="mt-4 mask rounded-3xl" format="webp" width={650} height={350} src={`${import.meta.env.BASE_URL}camchanh.jpg`} alt="Cam (right) & Chanh (left)" />
         <div class="mt-4 leading-normal text-md ">I love scuba diving (fun fact: I got to see a whaleshark on my second ever dive), my next goal is to learn how to freedive! </div>
       </div>
     </div>
@@ -86,8 +86,8 @@ const last_posts = posts.slice(0, 3);
     </div>
     <div class="mt-2">
         <a class="btn btn-outline" href="https://twitter.com/len_luong09" target="_blank"> Let's connect!</a>
-        <a class="btn btn-outline" href="/blog"> My Blog</a>
-        <a class="btn btn-outline" href="/projects"> My Projects</a>
+        <a class="btn btn-outline" href={`${import.meta.env.BASE_URL}blog`}> My Blog</a>
+        <a class="btn btn-outline" href={`${import.meta.env.BASE_URL}projects`}> My Projects</a>
         <a class="btn btn-outline" href="mailto:len@cs.toronto.edu" target="_blank"> Email me</a>
       </div>
   </div>
@@ -128,7 +128,7 @@ const last_posts = posts.slice(0, 3);
     title="Revealing Fine Structure in Protoplanetary Disks with Physics Constrained Neural Fields"
     authors={["Aviad Levis", "Nhan Luong", "Richard Teague", "Katherine. L. Bouman", "Marcelo Barraza-Alfaro", "Kevin Flaherty"]}
     author_index={1}
-    img="/images/projects/radjax.jpg"
+    img={`${import.meta.env.BASE_URL}images/projects/radjax.jpg`}
     abstract="Protoplanetary disks are the birthplaces of planets, and resolving their three-dimensional structure is key to understanding disk evolution. The unprecedented resolution of ALMA demands modeling approaches that capture features beyond the reach of traditional methods. We introduce a computational framework that integrates physics-constrained neural fields with differentiable rendering and present RadJAX, a GPU-accelerated, fully differentiable line radiative transfer solver achieving up to 10,000x speedups over conventional ray tracers, enabling previously intractable, high-dimensional neural reconstructions. Applied to ALMA CO observations of HD 163296, this framework recovers the vertical morphology of the CO-rich layer, revealing a pronounced narrowing and flattening of the emission surface beyond 400 au - a feature missed by existing approaches. Our work establish a new paradigm for extracting complex disk structure and advancing our understanding of protoplanetary evolution."
     url="https://arxiv.org/abs/2509.03623"
   />
@@ -148,7 +148,7 @@ const last_posts = posts.slice(0, 3);
     title="Training-Free Condition Video Diffusion Models for single frame Spatial-Semantic Echocardiogram Synthesis"
     authors={["Van Phi Nguyen", "Nhan Luong", "Huy Hieu Pham", "Quoc Long Tran"]}
     author_index={1}
-    img="/images/projects/miccai.jpg"
+    img={`${import.meta.env.BASE_URL}images/projects/miccai.jpg`}
     abstract="Conditional video diffusion models (CDM) have shown promising results for video synthesis, potentially enabling the generation of realistic echocardiograms to address the problem of data scarcity. However, current CDMs require a paired segmentation map and echocardiogram dataset. We present a new method called Free-Echo for generating realistic echocardiograms from a single end-diastolic segmentation map without additional training data. Our method is based on the 3D-Unet with Temporal Attention Layers model and is conditioned on the segmentation map using a training-free conditioning method based on SDEdit. We evaluate our model on two public echocardiogram datasets, CAMUS and EchoNet-Dynamic. We show that our model can generate plausible echocardiograms that are spatially aligned with the input segmentation map, achieving performance comparable to training-based CDMs. Our work opens up new possibilities for generating echocardiograms from a single segmentation map, which can be used for data augmentation, domain adaptation, and other applications in medical imaging."
     url="https://link.springer.com/chapter/10.1007/978-3-031-72089-5_63"
   />
@@ -167,7 +167,7 @@ const last_posts = posts.slice(0, 3);
     title="Spatial photoluminescence and lifetime mappings of quasi-2D perovskites coupled with a dielectric metasurface"
     authors={["Hai Xuan Son Bui", "Tuyet Thi Doan", "Nhan Ha Tri Luong", "Dang Khue Luu", "Ha Thi Thu Do", "Linh Ha Chu", "Duong Pham", "Oanh Thi Kim Vu", "Son Tung Bui", "Thuat Tran Nguyen", "Xuan Khuyen Bui", "Dinh Lam Vu", "Hai Son Nguyen", "Tung Son Ha", "Quynh Le-Van"]}
     author_index={2}
-    img="/images/projects/optics_letter_thumbnail.jpg"
+    img={`${import.meta.env.BASE_URL}images/projects/optics_letter_thumbnail.jpg`}
     abstract="Light–matter interaction between quantum emitters and optical cavities plays a vital role in fundamental quantum photonics and the development of optoelectronics. Resonant metasurfaces are proven to be an efficient platform for tailoring the spontaneous emission (SE) of the emitters. In this work, we study the interplay between quasi-2D perovskites and dielectric TiO2 metasurfaces. The metasurface, functioning as an open cavity, enhances electric fields near its plane, thereby influencing the emissions of the perovskite. This is verified through angle-resolved photoluminescence (PL) studies. We also conducted reflectivity measurements and numerical simulations to validate the coupling between the quasi-2D perovskites and photonic modes. Notably, our work introduces a spatial mapping approach to study Purcell enhancement. Using fluorescence lifetime imaging microscopy (FLIM), we directly link the PL and lifetimes of the quasi-2D perovskites in spatial distribution when positioned on the metasurface. This correlation provides unprecedented insights into emitter distribution and emitter–resonator interactions. The methodology opens a new (to the best of our knowledge) approach for studies in quantum optics, optoelectronics, and medical imaging by enabling spatial mapping of both PL intensity and lifetime, differentiating between uncoupled quantum emitters and those coupled with different types of resonators."
     url="https://opg.optica.org/ol/abstract.cfm?uri=ol-49-9-2465"
   />
@@ -185,7 +185,7 @@ const last_posts = posts.slice(0, 3);
           title={post.data.title}
           img={post.data.heroImage}
           desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
+          url={`${import.meta.env.BASE_URL}blog/` + createSlug(post.data.title, post.slug)}
           target="_self"
           badge={post.data.badge}
         />
@@ -208,7 +208,7 @@ const last_posts = posts.slice(0, 3);
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Web API & GUI Programming"
-    img="/images/projects/gui_lecture.png"
+    img={`${import.meta.env.BASE_URL}images/projects/gui_lecture.png`}
     desc="Content for my Web API + GUI lecture for Introduction to Programming (COMP1010) course at VinUniversity."
     url="https://tricolor-riddle-c08.notion.site/Introduction-to-GUI-Programming-with-Python-Tkinter-and-Public-Web-APIs-2834f6bcca264029864e1b08e7676340"
     badge="Teaching"
