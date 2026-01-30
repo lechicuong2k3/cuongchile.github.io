@@ -27,7 +27,11 @@ const tag_url = url && url !== "#" ? url.split("/").slice(0, -1).join("/") + "/t
       }
       <div class="grow w-full">
         <h1 class="text-xl font-bold">
-          {badge && <div class="badge badge-primary">{badge}</div>}
+          {badge && (
+            <div class={`badge ${badge.includes("Arxiv") || badge.includes("arXiv") ? "badge-error" : "badge-primary"}`}>
+              {badge}
+            </div>
+          )}
         </h1>
         <h1 class="text-xl font-bold">
           {title}
