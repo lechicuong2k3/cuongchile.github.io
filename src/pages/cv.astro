@@ -5,16 +5,14 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Nhan H.T. Luong (Len)</div>
+    <div class="text-3xl w-full font-bold">Cuong Chi Le</div>
+    <div class="text-lg mt-2">
+      lechicuongldk@gmail.com | +1 469-246-8980 | <a href="https://github.com/lechicuong2k3" target="_blank" class="link">Github</a> | <a href="#" target="_blank" class="link">Google Scholar</a> | <a href="#" target="_blank" class="link">Linkedin</a>
+    </div>
   </div>
 
   <div class="mb-10 text-justify">
-    My interest lies in the intersection of computer science, astronomy, and (astro)physics. Within the field of
-    computer science, my primary interests are within <b>visual computing</b> (computational imaging, computer vision,
-    computer graphics, visualization) as well as <b>data-intensive science</b> (numerical methods, simulation, data
-    processing, machine learning, deep learning).
-    I am also passionate about teaching and inspiring new generation of scientists and engineers by cultivating their
-    love for science and technology.
+    <b>Research Interest:</b> AI4SE, Automated Software Engineering, Mining Software Repositories, Large Language Model
   </div>
 
   <div class="mb-5">
@@ -23,21 +21,17 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="PhD (Direct-Entry) in Computer Science"
-      subtitle="2024 - Present @ University of Toronto, Toronto, Canada"
+      title="Doctor of Philosophy, Computer Science"
+      subtitle="Jan 2026 – Jan 2031 @ The University of Texas at Dallas, Richardson, Texas, USA"
     >
+      Relevant Courses: Artificial Intelligence, Machine Learning, Natural Language Processing (graduate level)
     </TimeLineElement>
     <TimeLineElement
-      title="Bachelor of Computer Science (Honours)"
-      subtitle="2021 - 2022 @ Monash University, Melbourne, Australia"
+      title="Bachelor of Science, Computer Science"
+      subtitle="Sep 2021 - May 2025 @ VinUniversity, Hanoi, Vietnam"
     >
-    GPA: 4.0 / 4.0 | First Class Honours
-    </TimeLineElement>
-    <TimeLineElement
-      title="Bachelor of Computer Science in Advanced Computer Science"
-      subtitle="2018 - 2021 @ Monash University, Melbourne, Australia"
-    >
-      GPA: 3.6 / 4.0 | High Distinction
+      GPA: 3.7/4.0<br>
+      Relevant Courses: OOP and Data Structures, Software Construction, Operating Systems, Artificial Intelligence, Machine Learning, Linear Programming for Machine Learning, Natural Language Processing, Computer Vision, Data Mining and Big Data Analytics
     </TimeLineElement>
   </div>
 
@@ -47,35 +41,44 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Research Assistant — Security and Artificial Intelligence Lab"
-      subtitle="Oct 2023 - May 2024 @ VinUniversity, Hanoi, Vietnam"
+      title="Researcher — AI4SE Lab"
+      subtitle="Jan 2026 – Now @ The University of Texas at Dallas, Richardson, Texas, USA"
     >
-    <u><em>Survey on practicality of federated learning in IoT:</em></u> Gained a grasp of benefits, challenges applications, of federated learning and current state-of-the-art. Conducted
-    literature survey and designed taxonomy of contemporary federated learning landscape in communication efficiency
-    perspective.
-    
+      Supervisor: Dr. Tien N. Nguyen
     </TimeLineElement>
     <TimeLineElement
-      title="Research Assistant — Center for Environmental Intelligence"
-      subtitle="Oct 2022 - Oct 2023 @ VinUniversity, Hanoi, Vietnam"
+      title="Research Resident — AI Residency Program"
+      subtitle="June 2024 – Dec 2025 @ FPT Software AI Center, Hanoi, Vietnam"
     >
-    <u><em>AI for MOF material discovery project (in collaboration with UC Berkeley & Monash University):</em></u> Developed image recognition system and web application for fast batch crystal detection from automated
-    microscopy images of high-throughput chemistry experiments. Implemented, trained, and conducted performance
-    benchmark of state-of-the-art image classification methods (architectures, augmentations, regularization) on our
-    new dataset of metal-organic framework crystals (MOFs) images. <br>
-    <u><em>Inverse design for nanophotonics metasurface material topology optimization:</em></u> Conducted literature review to identify current trends in nanophotonics material inverse design using deep neural
-    networks. Led an initiative to investigate practicality of applying published methods for finding materials with
-    desired optical properties via topological optimization. <br>
-    <u><em>Spatial lifetime mapping of perovskite quantum dots coupled with a dielectric metasurface:</em></u> Operated fluorescence lifetime imaging system, and processed and analyzed measurement data. Applied
-    time-correlated single photon counting to determine photon lifetime of perovskite quantum dots on metasurface. <br>
+      <u><em>PI(s):</em></u> Dr. Tien N. Nguyen & Dr. Nghi D. Q. Bui<br>
+      Focused on applying AI/ML to software engineering tasks, exploring if/how LLMs understand and reason about program behavior, and enhancing their performance on coding tasks like Code Refactoring, Software Testing, and Code Generation.
     </TimeLineElement>
-  <TimeLineElement
-      title="Research Scholarship — Immersive Analytics Lab"
-      subtitle="Nov 2021 - Mar 2022 @ Monash University, Melbourne, Australia"
+    <TimeLineElement
+      title="Research Assistant — Security and Artificial Intelligence Lab (SAIL)"
+      subtitle="Aug 2023 - June 2024 @ VinUniversity, Hanoi, Vietnam"
     >
-    <u><em>Hand gesture capture for interactive data analytics:</em></u> Continued developing a web application to record intuitive hand gestures for data exploration and navigation in
-    real-world space.
-    
+      <u><em>Project:</em></u> Toward Clean-label Physical Backdoor Attack on Deep Learning systems.<br>
+      <u><em>PI(s):</em></u> Dr. Kok-Seng Wong & Dr. Khoa D Doan<br>
+      Proposed a new setting for clean-label physical backdoor attack and a new groundbreaking attack demonstrating improved effectiveness, achieved through lower poisoning rate and stricter, more realistic threat model compared to existing methods. Conducted extensive experiments across diverse scenarios, systematically evaluating the performance of the proposed attacks when applying state-of-the-art filtering and trigger-synthesis defenses.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Undergrad Research Assistant — VinUni-Illinois Smart Health Center Summer School"
+      subtitle="July 2023 - Aug 2023 @ Hanoi, Vietnam"
+    >
+      <u><em>Project:</em></u> Physical backdoor attack on Federated learning.<br>
+      <u><em>PI(s):</em></u> Dr. Kok-Seng Wong<br>
+      Conducted a comprehensive survey on current backdoor attack developments. Collected a new dataset for a facial recognition task. Developed a mobile app to enable federated learning training across 20 phones, and applied dirty-label backdoor attack methods to evaluate vulnerabilities in a real-world federated learning setting.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Undergrad Research Assistant — College of Engineering and Computer Science"
+      subtitle="Mar 2022 - July 2023 @ VinUniversity, Hanoi, Vietnam"
+    >
+      <u><em>Project 1:</em></u> Analyzing hotel data using NLP tools.<br>
+      <u><em>PI(s):</em></u> Dr. Wray Buntine & Dr. Dung D. Le<br>
+      Conducted a comprehensive review of recent advancements in AI pertaining to the analysis of hotel reviews. Applied exploratory NLP tools provided by VinAI to analyze VinPearl hotel data.<br><br>
+      <u><em>Project 2:</em></u> Federated learning for autonomous cars and smart health.<br>
+      <u><em>PI(s):</em></u> Dr. Tu Nguyen<br>
+      Conducted research and implemented a framework for federated learning, specifically utilizing the FLOWER framework. The implementation was tailored to run on the Jetson Nano device.
     </TimeLineElement>
   </div>
 
@@ -85,71 +88,127 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-    title="Teaching Assistant"
-    subtitle="Oct 2022 - Jun 2024 @ VinUniversity, Hanoi, Vietnam"
+      title="Teaching Assistant"
+      subtitle="Jan 2026 – Now @ The University of Texas at Dallas, Richardson, Texas, USA"
     >
-      COMP4010 - Data Visualization (Spring '24) <br>
-      COMP4010 - Computational & Algorithmic Thinking (Spring '24) <br>
-      COMP1010 & BANA3020 - Introduction to Programming (Fall '22, Fall '23) <br>
-      COMP3010 - Algorithm Design (Spring '23) <br>
-      PHYS2030 - Physics III (Spring '23) <br>
-    </TimeLineElement>
-    <TimeLineElement
-    title="Consultant - Software Engineer (IBL)"
-    subtitle="Jan 2021 - Jun 2021 @ Deloitte Digital, Melbourne, Australia"
-    >
-      Digital consulting and Agile software development experience. <br>
-      Experience with Confluence, JIRA, BitBucket/Git, Azure build pipelines and SonarQube. <br>
-      Developed mobile application with Kotlin, Swift, JavaScript, Postman, AWS S3, AWS Lambda. <br>
-      Developed virtual assistant with Unity, C#, AWS Lex, AWS Polly, AWS Transcribe. <br>
-      Developed interactive AR pegboard with OpenCV, PyQt5, C#, Unity. <br>
+      SE4352 - Software Architecture and Design (Class Capacity: 90 students)
     </TimeLineElement>
   </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Publications</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="TestWeaver: Execution-aware, Feedback-driven Regression Testing Generation with Large Language Models"
+      subtitle="48th IEEE/ACM International Conference on Software Engineering (ICSE 2026)"
+    >
+      Cuong Chi Le, Cuong Duc Van, Tung Duy Vu, Minh V. T. Pham, Hoang Nhat Phan, Huy Nhat Phan, Tien N Nguyen
+    </TimeLineElement>
+    <TimeLineElement
+      title="SWE-Synth: Synthesizing Verifiable Bug-Fix Data to Enable Large Language Models in Resolving Real-World Bugs"
+      subtitle="48th IEEE/ACM International Conference on Software Engineering (ICSE 2026)"
+    >
+      Minh V. T. Pham, Huy N. Phan, Hoang Nhat Phan, Cuong Chi Le, Tien N. Nguyen, Nghi D. Q. Bui
+    </TimeLineElement>
+    <TimeLineElement
+      title="VisualCoder: Guiding Large Language Models in Code Execution with Fine-grained Multimodal Chain-of-Thought Reasoning"
+      subtitle="Annual Conference of the Nations of the Americas Chapter of the ACL (Findings of NAACL 2025)"
+    >
+      Cuong Chi Le, Hoang-Chau Truong-Vinh, Huy Nhat Phan, Dung Duy Le, Tien N. Nguyen, Nghi D. Q. Bui
+    </TimeLineElement>
+    <TimeLineElement
+      title="CodeFlow: Program Behavior Prediction with Dynamic Dependencies Learning"
+      subtitle="2nd IEEE/ACM International Conference on AI Foundation Models and Software Engineering (FORGE 2025)"
+    >
+      Cuong Chi Le, Hoang Nhat Phan, Huy Nhat Phan, Tien N. Nguyen, Nghi D. Q. Bui
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Preprints</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="SpecMind: Cognitively Inspired, Interactive Multi-Turn Framework for Postcondition Inference"
+      subtitle="Under review in ACL 2026"
+    >
+      Cuong Chi Le, Minh V. T. Pham, Tung Duy Vu, Cuong Duc Van, Hoang Nhat Phan, Huy Nhat Phan, Tien N. Nguyen
+    </TimeLineElement>
+    <TimeLineElement
+      title="When Names Disappear: Revealing What LLMs Actually Understand About Code"
+      subtitle="Under review in ISSTA 2026"
+    >
+      Cuong Chi Le, Minh V. T. Pham, Cuong Duc Van, Hoang N Phan, Huy N Phan, Tien N. Nguyen
+    </TimeLineElement>
+    <TimeLineElement
+      title="VizLint: An Automated Web UI Bug Detection Tool with Fine-Grained Visual Cueing"
+      subtitle="Under review in FSE Tool Demo 2026"
+    >
+      Cuong Chi Le, Hoang Nhat Phan, Huy Nhat Phan, Minh V. T. Pham, Tien N. Nguyen
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Projects</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Clinical Rotation website — Front-end Developer/Back-end Developer"
+      subtitle="Jan 2023"
+    >
+      Developed a website that can effectively produce the most appropriate clinical rotation including schedules for medical students, nursing students, and residents, by using data from the academic training programs from CHS (College of Health Sciences) at Vin University
+    </TimeLineElement>
+    <TimeLineElement
+      title="UNIFIX start-up — Front-end Developer/Scrum Master/Product Manager"
+      subtitle="Dec 2022"
+    >
+      Took on the position of CTO for an edu-tech startup called UNIFIX, which has successfully raised $2000 in funding. Co-ordinated development decisions with clients and managed team with Agile methodology.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Food Menu Translator AI-integrated website — Front-end Developer"
+      subtitle="Aug 2022"
+    >
+      Used React.js to develop front-end interface for a web app that help enhancing tourists' food experience. Main functions: Explore nearby restaurants' location, menu, and reputation; Save favorite restaurants for future use; Find restaurants based on food name, Extract food list from menu image
+    </TimeLineElement>
+    <TimeLineElement
+      title="Brick Breaker Java App — Java Developer"
+      subtitle="Mar 2022"
+    >
+      Built a desktop app in Java in which the player must smash a wall of bricks by deflecting a bouncing ball with a paddle, whenever the ball touches a brick, it will disappear, and the player wins when breaking all the bricks or loses when failing to catch the ball with the paddle. Created and used many types of Data Structure and classes that are organized by Object Oriented Programming style.
+    </TimeLineElement>
+  </div>
+
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Awards & Honours</div>
   </div>
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li>
-      <b> Teaching Assistant with Outstanding Contribution (VinUniversity, 2024):</b> Awarded to 6 Teaching Assistants who made outstanding contribution teaching and supporting student learning.
+      <b>Third Prize, ICPC Vietnam National Programming Contest (Nov 2023):</b> Awarded to top performers in the national programming competition.
     </li>
     <li>
-      <b> Teaching Excellence Award (VinUniversity, 2023):</b> Awarded to 2 Teaching Assistant and 8 Faculty members who were nominated by
-      colleagues and students for delivering excellence in teaching and supporting student learning.
+      <b>First Prize, National Vietnam Mathematical Olympiad for University Student (April 2023):</b> Awarded to the top performer in the national mathematical competition for university students.
     </li>
     <li>
-      <b> Undergraduate Vacation Research Scholarship (Monash University, 2021):</b> Awarded to undergraduate students who were selected take part
-      in research projects at Monash University over a vacation period.
-    </li>
-    <li>
-      <b> Information Technology IBL Placement Scholarship (Monash University, 2021):</b> Awarded to undergraduate students after a highly selective
-      multi-round interview process to work at a partner organization as a full-time graduate-level employee for one semester.
-    </li>
-    <li>
-      <b> Information Technology International Merit Scholarship (3 years) (Monash University, 2021):</b> Awarded to incoming international
-      students with outstanding academic background and achievements.
+      <b>Second Prize, National Vietnam Mathematical Olympiad (Mar 2021):</b> Awarded to top performers in the national mathematical competition.
     </li>
   </ul>
 
-  <!-- <div class="mb-5">
+  <div class="mb-5">
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-  </ul> -->
+  <div class="mb-5">
+    <div class="text-xl font-semibold mb-2">Languages:</div>
+    <p>Python, Java, C++, HTML, CSS, JavaScript, TypeScript, Golang</p>
+  </div>
+
+  <div class="mb-10">
+    <div class="text-xl font-semibold mb-2">Tools/Packages/Framework:</div>
+    <p>PyTorch, TensorFlow, DSPy, Git, Remix, React, NodeJS, Npm, Docker, Postman, TablePlus, Pandas</p>
+  </div>
 </BaseLayout>
